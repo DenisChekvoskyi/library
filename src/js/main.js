@@ -1,3 +1,3 @@
-import "./lib/lib";
+import $ from "./lib/lib";
 
-$(".active").toggle();
+$("a").setAtr("download", "price").delAtr("download");
