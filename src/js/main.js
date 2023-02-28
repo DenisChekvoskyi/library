@@ -1,3 +1,11 @@
 import $ from "./lib/lib";
 
-$("a").setAtr("download", "price").delAtr("download");
+$("button").click(() => {
+  $("div").eq(1).toggleClass("active");
+});
+
+$("div").click(function () {
+  console.log($(this).index());
+});
+
+console.log($("div").eq(2).find(".some"));
