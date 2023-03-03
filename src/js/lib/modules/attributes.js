@@ -13,3 +13,13 @@ $.prototype.delAtr = function (name) {
   }
   return this;
 };
+
+$.prototype.getAtr = function (name) {
+  for (let i = 0; i < this.length; i++) {
+    if (!this[i].getAttribute(name)) {
+      continue;
+    }
+    return this[i].getAttribute(name);
+  }
+  return this;
+};
