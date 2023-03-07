@@ -340,6 +340,7 @@
 .carousel-slides {
   height: 100%;
   display: flex;
+  transition: all 1s;
 }
 .carousel-items {
   height: 100%;
