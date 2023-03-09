@@ -58,7 +58,6 @@ $.prototype.carousel = function () {
 
     const sliderId = this[i].getAttribute("id");
     $(`#${sliderId} .carousel-indicators li`).click((e) => {
-      console.log("Ok");
       const slideTo = e.target.getAttribute("data-slide-to");
 
       slideIndex = slideTo;
